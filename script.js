@@ -188,7 +188,35 @@ const dishes = [
     tag: "Chaat India Special",
     description: "A special yoghurt-based chaat with paneer.",
     image: "Dahi Bhala Paneer.png"
-  }
+  },
+  {
+  name: "Double Samosa Chaat",
+  category: "Chaat",
+  tag: "BESTSELLER",
+  image:"Double Samosa Chaat.png",
+  description: "Crispy samosas topped with chutneys and chaat spices."
+},
+{
+  name: "Bucket Chaat Family Pack",
+  category: "Specials",
+  tag: "FAMILY PACK",
+  image: "Bucket Chaat Family Pack.png",
+  description: "A shareable family-sized chaat pack."
+},
+// {
+//   name: "Fry Chaat",
+//   category: "Chaat",
+//   tag: "MUST TRY",
+//   image: "Fry Chaat.png",
+//   description: "Crispy chaat with chutneys and traditional toppings."
+// },
+{
+  name: "Masala Cheese Pav",
+  category: "Pav Bhaji",
+  tag: "CHEESY FAVOURITE",
+  image: "Masala Cheese Pav.png",
+  description: "Buttery pav with spicy masala and melted cheese."
+}
 ];
 
 const categories = [
