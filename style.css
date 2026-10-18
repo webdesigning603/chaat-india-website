@@ -892,3 +892,102 @@ footer {
     min-height: auto;
   }
 }
+.food-price {
+  color: #d91f2b;
+  font-size: 21px;
+  font-weight: 800;
+  margin: 8px 0;
+}
+
+.food-description {
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.6;
+  min-height: 62px;
+}
+
+@media (max-width: 650px) {
+  .food-price {
+    font-size: 19px;
+  }
+
+  .food-description {
+    font-size: 12px;
+    min-height: 75px;
+  }
+}
+
+/* Ghee Jalebi size and price list */
+.jalebi-price-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 4px 0;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #766b61;
+}
+
+.jalebi-price-row strong {
+  color: #bd4b0b;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.food-price:has(.jalebi-price-row) {
+  width: 100%;
+  font-size: 14px;
+  margin: 8px 0;
+}
+
+.modal-price-list {
+  margin-top: 8px;
+  width: 100%;
+}
+
+.modal-price-list .jalebi-price-row {
+  padding: 7px 0;
+  border-bottom: 1px solid #f0e2d2;
+  font-size: 14px;
+}
+
+.modal-price-list .jalebi-price-row strong {
+  font-size: 17px;
+}
+
+.food-card:has(.jalebi-price-row) .food-description {
+  min-height: auto;
+}
+
+/* Reduce prices for all regular food cards */
+.food-body > .food-price:not(:has(.jalebi-price-row)) {
+  font-size: 14px;
+  font-weight: 600;
+  margin: 5px 0;
+}
+
+/* Keep regular food card titles and spacing neat */
+.food-body h3 {
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+/* Smaller prices in the food details popup */
+#modalPrice:not(:has(.jalebi-price-row)) {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* Keep Ghee Jalebi prices at their existing smaller size */
+.food-price:has(.jalebi-price-row) {
+  font-size: 12px;
+}
+
+.jalebi-price-row {
+  font-size: 10px;
+}
+
+.jalebi-price-row strong {
+  font-size: 11px;
+}

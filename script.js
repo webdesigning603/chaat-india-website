@@ -1,9 +1,11 @@
 
 const dishes = [
+  // PURI ITEMS
   {
     name: "Pani Puri",
     category: "Puri",
     tag: "Street Food Classic",
+    price: 25,
     description: "Crispy puris filled with tangy, spicy pani and delicious fillings.",
     image: "Pani Puri.png"
   },
@@ -11,6 +13,7 @@ const dishes = [
     name: "Masala Puri",
     category: "Puri",
     tag: "Flavourful Favourite",
+    price: 70,
     description: "A delicious puri treat with a spiced masala topping.",
     image: "Masala Puri.png"
   },
@@ -18,6 +21,7 @@ const dishes = [
     name: "Sev Puri",
     category: "Puri",
     tag: "Crunchy & Tangy",
+    price: 70,
     description: "Crisp puris topped with chutneys and crunchy sev.",
     image: "Sev Puri.png"
   },
@@ -25,20 +29,25 @@ const dishes = [
     name: "Bhel Puri",
     category: "Puri",
     tag: "Light & Crunchy",
+    price: 70,
     description: "Puffed rice, chutneys and crunchy toppings in a lively mix.",
     image: "Bhel Puri.png"
   },
   {
-    name: "Dahi Puri",
+    name: "Dhai Puri",
     category: "Puri",
     tag: "Cool & Creamy",
+    price: 70,
     description: "Crispy puris paired with yoghurt and sweet-tangy chutneys.",
     image: "Dahi Puri.png"
   },
+
+  // CHAAT ITEMS
   {
     name: "Samosa Chaat",
     category: "Chaat",
     tag: "Crowd Favourite",
+    price: 65,
     description: "A comforting chaat favourite with crispy samosa and toppings.",
     image: "Samosa Chaat.png"
   },
@@ -46,6 +55,7 @@ const dishes = [
     name: "Kachodi Chaat",
     category: "Chaat",
     tag: "Bold & Savoury",
+    price: 65,
     description: "A crunchy chaat with classic Indian flavours.",
     image: "Kachodi Chaat.png"
   },
@@ -53,6 +63,7 @@ const dishes = [
     name: "Papidi Chaat",
     category: "Chaat",
     tag: "Sweet & Spicy",
+    price: 65,
     description: "Crisp papdi with chutneys and delicious toppings.",
     image: "Papidi Chaat.png"
   },
@@ -60,13 +71,15 @@ const dishes = [
     name: "Dhai Papidi Chaat",
     category: "Chaat",
     tag: "Creamy Favourite",
+    price: 65,
     description: "Papdi, yoghurt and chutneys come together in every bite.",
     image: "Dhai Papidi Chaat.png"
   },
   {
-    name: "Aloo Dahi Chaat",
+    name: "Aloo Dhai Chaat",
     category: "Chaat",
     tag: "Comforting Bite",
+    price: 85,
     description: "Potato chaat with creamy yoghurt and tangy flavours.",
     image: "Aloo Dahi Chaat.png"
   },
@@ -74,6 +87,7 @@ const dishes = [
     name: "Mix Chaat",
     category: "Chaat",
     tag: "A Bit of Everything",
+    price: 80,
     description: "A delicious mix of textures and signature chaat flavours.",
     image: "Mix Chaat.png"
   },
@@ -81,6 +95,7 @@ const dishes = [
     name: "Aloo Butter Tikki Chaat",
     category: "Chaat",
     tag: "Golden & Savoury",
+    price: 90,
     description: "A potato tikki-style chaat with buttery flavour and toppings.",
     image: "Aloo Butter Tikki Chaat.png"
   },
@@ -88,6 +103,7 @@ const dishes = [
     name: "Fry Chaat",
     category: "Chaat",
     tag: "Crispy Delight",
+    price: 85,
     description: "A crunchy, savoury chaat treat for snack-time cravings.",
     image: "Fry Chaat.png"
   },
@@ -95,27 +111,49 @@ const dishes = [
     name: "Katori Chaat",
     category: "Chaat",
     tag: "Tasty Little Bowl",
+    price: 85,
     description: "A crisp katori filled with delicious chaat flavours.",
     image: "Katori Chaat.png"
   },
   {
-    name: "Samosa",
+    name: "Double Samosa Chaat",
+    category: "Chaat",
+    tag: "Bestseller",
+    price: 110,
+    description: "Crispy samosas topped with chutneys and chaat spices.",
+    image: "Double Samosa Chaat.png"
+  },
+  {
+    name: "Bucket Family Pack Chaat",
+    category: "Chaat",
+    tag: "Family Pack",
+    price: 160,
+    description: "A shareable family-sized bucket of delicious chaat.",
+    image: "Bucket Chaat Family Pack.png"
+  },
+
+  // SAMOSA AND KACHODI ITEMS
+  {
+    name: "Samosa (2 Pieces)",
     category: "Samosa & Kachodi",
     tag: "Crispy Classic",
-    description: "A golden, crisp Indian snack with a savoury filling.",
+    price: 30,
+    description: "Two golden, crispy samosas with a savoury filling.",
     image: "Samosa.png"
   },
   {
-    name: "Kachodi",
+    name: "Kachodi (2 Pieces)",
     category: "Samosa & Kachodi",
     tag: "Flaky & Savoury",
-    description: "A traditional flaky snack with a flavourful filling.",
+    price: 50,
+    description: "Two traditional flaky kachodis with a flavourful filling.",
     image: "Kachodi.png"
   },
   {
     name: "Dhai Samosa",
     category: "Samosa & Kachodi",
     tag: "Creamy & Crunchy",
+    price: 60,
     description: "Crispy samosa served with yoghurt and chutneys.",
     image: "Dhai Samosa.png"
   },
@@ -123,6 +161,7 @@ const dishes = [
     name: "Dhai Kachodi",
     category: "Samosa & Kachodi",
     tag: "Tangy Favourite",
+    price: 60,
     description: "Flaky kachodi finished with yoghurt and chutneys.",
     image: "Dhai Kachodi.png"
   },
@@ -130,13 +169,17 @@ const dishes = [
     name: "Dhai Bhala",
     category: "Samosa & Kachodi",
     tag: "Soft & Creamy",
+    price: 70,
     description: "A classic yoghurt-based chaat with a tangy finish.",
     image: "Dhai Bhala.png"
   },
+
+  // PAV BHAJI ITEMS
   {
     name: "Butter Pav Bhaji",
     category: "Pav Bhaji",
     tag: "Mumbai Inspired",
+    price: 100,
     description: "Spiced vegetable bhaji served with buttery pav.",
     image: "Butter Pav Bhaji.png"
   },
@@ -144,6 +187,7 @@ const dishes = [
     name: "Cheese Pav Bhaji",
     category: "Pav Bhaji",
     tag: "Cheesy Favourite",
+    price: 120,
     description: "A rich pav bhaji favourite with a cheesy twist.",
     image: "Cheese Pav Bhaji.png"
   },
@@ -151,74 +195,71 @@ const dishes = [
     name: "Paneer Pav Bhaji",
     category: "Pav Bhaji",
     tag: "Paneer Delight",
-    description: "Spiced bhaji with paneer notes, paired with soft pav.",
+    price: 120,
+    description: "Spiced bhaji with paneer, paired with soft pav.",
     image: "Paneer Pav Bhaji.png"
   },
   {
     name: "Masala Pav",
     category: "Pav Bhaji",
     tag: "Spicy & Satisfying",
+    price: 130,
     description: "Pav tossed with a fragrant, flavour-packed masala.",
     image: "Masala Pav.png"
   },
   {
+    name: "Masala Cheese Pav",
+    category: "Pav Bhaji",
+    tag: "Cheesy Favourite",
+    price: 150,
+    description: "Buttery pav tossed in spicy masala and topped with cheese.",
+    image: "Masala Cheese Pav.png"
+  },
+
+  // GHEE JALEBI - ONE ITEM WITH FOUR SIZES
+  {
     name: "Ghee Jalebi",
     category: "Sweets",
     tag: "Golden Sweet",
-    description: "Golden jalebi with a rich ghee aroma and syrupy bite.",
+    price: 55,
+    sizes: [
+      { label: "3 Pieces", price: 55 },
+      { label: "250 g", price: 140 },
+      { label: "500 g", price: 280 },
+      { label: "1 kg", price: 500 }
+    ],
+    description: "Golden, delicious ghee jalebi available in multiple sizes.",
     image: "Ghee Jalebi.png"
   },
+
+  // CHAAT INDIA SPECIAL ITEMS
   {
     name: "Raj Kachodi",
     category: "Specials",
     tag: "Chaat India Special",
+    price: 90,
     description: "A special kachodi-style chaat packed with flavour.",
     image: "Raj Kachodi.png"
   },
   {
-    name: "Aloo Dahi Paneer",
+    name: "Aloo Dhai Paneer",
     category: "Specials",
     tag: "Special Combination",
-    description: "A distinctive combination of aloo, dahi and paneer.",
+    price: 90,
+    description: "A distinctive combination of aloo, dhai and paneer.",
     image: "Aloo Dahi Paneer.png"
   },
   {
-    name: "Dahi Bhala Paneer",
+    name: "Dhai Bhala Paneer",
     category: "Specials",
     tag: "Chaat India Special",
+    price: 90,
     description: "A special yoghurt-based chaat with paneer.",
     image: "Dahi Bhala Paneer.png"
-  },
-  {
-  name: "Double Samosa Chaat",
-  category: "Chaat",
-  tag: "BESTSELLER",
-  image:"Double Samosa Chaat.png",
-  description: "Crispy samosas topped with chutneys and chaat spices."
-},
-{
-  name: "Bucket Chaat Family Pack",
-  category: "Specials",
-  tag: "FAMILY PACK",
-  image: "Bucket Chaat Family Pack.png",
-  description: "A shareable family-sized chaat pack."
-},
-// {
-//   name: "Fry Chaat",
-//   category: "Chaat",
-//   tag: "MUST TRY",
-//   image: "Fry Chaat.png",
-//   description: "Crispy chaat with chutneys and traditional toppings."
-// },
-{
-  name: "Masala Cheese Pav",
-  category: "Pav Bhaji",
-  tag: "CHEESY FAVOURITE",
-  image: "Masala Cheese Pav.png",
-  description: "Buttery pav with spicy masala and melted cheese."
-}
+  }
 ];
 
+// MENU CATEGORIES
 const categories = [
   "All Items",
   "Puri",
@@ -235,15 +276,17 @@ const modal = document.getElementById("foodModal");
 
 let activeCategory = "All Items";
 
+// CREATE CATEGORY FILTER BUTTONS
 function renderFilters() {
+  if (!filters) return;
+
   filters.innerHTML = "";
 
   categories.forEach(category => {
     const button = document.createElement("button");
 
     button.className =
-      "filter" +
-      (category === activeCategory ? " active" : "");
+      "filter" + (category === activeCategory ? " active" : "");
 
     button.textContent = category;
 
@@ -257,7 +300,36 @@ function renderFilters() {
   });
 }
 
+// CREATE A PRICE DISPLAY
+function createPriceDisplay(dish, className = "food-price") {
+  const priceContainer = document.createElement("div");
+  priceContainer.className = className;
+
+  if (dish.sizes) {
+    dish.sizes.forEach(size => {
+      const row = document.createElement("div");
+      row.className = "jalebi-price-row";
+
+      const label = document.createElement("span");
+      label.textContent = size.label;
+
+      const price = document.createElement("strong");
+      price.textContent = `₹${size.price}`;
+
+      row.append(label, price);
+      priceContainer.appendChild(row);
+    });
+  } else {
+    priceContainer.textContent = `₹${dish.price}`;
+  }
+
+  return priceContainer;
+}
+
+// RENDER FOOD CARDS
 function renderMenu() {
+  if (!menuGrid) return;
+
   menuGrid.innerHTML = "";
 
   const filteredDishes =
@@ -273,6 +345,7 @@ function renderMenu() {
     card.setAttribute("role", "button");
     card.setAttribute("aria-label", `View ${dish.name}`);
 
+    // IMAGE
     const imageWrap = document.createElement("div");
     imageWrap.className = "food-image-wrap";
 
@@ -282,19 +355,28 @@ function renderMenu() {
     image.alt = dish.name;
     image.loading = "lazy";
 
+    image.onerror = function () {
+      this.alt = `${dish.name} image unavailable`;
+    };
+
+    // TAG
     const tag = document.createElement("span");
     tag.className = "food-tag";
     tag.textContent = dish.tag;
 
     imageWrap.append(image, tag);
 
+    // CARD CONTENT
     const body = document.createElement("div");
     body.className = "food-body";
 
     const title = document.createElement("h3");
     title.textContent = dish.name;
 
+    const price = createPriceDisplay(dish, "food-price");
+
     const description = document.createElement("p");
+    description.className = "food-description";
     description.textContent = dish.description;
 
     const bottom = document.createElement("div");
@@ -308,13 +390,20 @@ function renderMenu() {
     viewButton.type = "button";
     viewButton.textContent = "View Details ↗";
 
+    viewButton.addEventListener("click", event => {
+      event.stopPropagation();
+      showDish(dish);
+    });
+
     bottom.append(label, viewButton);
-    body.append(title, description, bottom);
+    body.append(title, price, description, bottom);
     card.append(imageWrap, body);
 
     card.addEventListener("click", () => showDish(dish));
 
     card.addEventListener("keydown", event => {
+      if (event.target !== card) return;
+
       if (event.key === "Enter" || event.key === " ") {
         event.preventDefault();
         showDish(dish);
@@ -325,34 +414,61 @@ function renderMenu() {
   });
 }
 
+// SHOW FOOD DETAILS POPUP
 function showDish(dish) {
-  document.getElementById("modalTitle").textContent = dish.name;
+  if (!modal) return;
 
-  document.getElementById("modalDescription").textContent =
-    dish.description;
-
+  const modalTitle = document.getElementById("modalTitle");
+  const modalDescription = document.getElementById("modalDescription");
   const modalImage = document.getElementById("modalImage");
+  const modalPrice = document.getElementById("modalPrice");
 
-  modalImage.src = dish.image;
-  modalImage.alt = dish.name;
+  if (modalTitle) modalTitle.textContent = dish.name;
+
+  if (modalDescription) {
+    modalDescription.textContent = dish.description;
+  }
+
+  if (modalPrice) {
+    modalPrice.replaceChildren();
+    modalPrice.appendChild(createPriceDisplay(dish, "modal-price-list"));
+  }
+
+  if (modalImage) {
+    modalImage.style.display = "block";
+    modalImage.src = dish.image;
+    modalImage.alt = dish.name;
+
+    modalImage.onerror = function () {
+      this.style.display = "none";
+    };
+  }
 
   modal.classList.add("open");
   document.body.style.overflow = "hidden";
 }
 
+// CLOSE POPUP
 function closeModal() {
+  if (!modal) return;
+
   modal.classList.remove("open");
   document.body.style.overflow = "";
 }
 
-document.getElementById("closeModal")
-  .addEventListener("click", closeModal);
+const closeButton = document.getElementById("closeModal");
 
-modal.addEventListener("click", event => {
-  if (event.target === modal) {
-    closeModal();
-  }
-});
+if (closeButton) {
+  closeButton.addEventListener("click", closeModal);
+}
+
+if (modal) {
+  modal.addEventListener("click", event => {
+    if (event.target === modal) {
+      closeModal();
+    }
+  });
+}
 
 document.addEventListener("keydown", event => {
   if (event.key === "Escape") {
@@ -360,8 +476,13 @@ document.addEventListener("keydown", event => {
   }
 });
 
-document.getElementById("year").textContent =
-  new Date().getFullYear();
+// FOOTER YEAR
+const yearElement = document.getElementById("year");
 
+if (yearElement) {
+  yearElement.textContent = new Date().getFullYear();
+}
+
+// INITIALISE WEBSITE
 renderFilters();
 renderMenu();
